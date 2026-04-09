@@ -1,10 +1,17 @@
-package TP3;
+package Heritqge;
 
-public class Moto {
+public class Moto extends Vehicule {
+    private boolean avecCasque;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
+    public Moto(String matricule, String marque, boolean avecCasque) {
+        super(matricule, marque);
+        this.avecCasque = avecCasque;}
+    
+    @Override
+    public void stationner() {
+        System.out.println("La moto se gare dans une place réservée aux deux-roues.");}
+    
+    @Override
+    public void afficher() {
+        super.afficher();
+        System.out.println("Avec casque : " + avecCasque); }}
