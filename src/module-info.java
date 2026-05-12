@@ -4,5 +4,5 @@
 /**
  * 
  */
-module TP20 {
+module TPJAVA7 {
 }
